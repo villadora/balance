@@ -13,8 +13,8 @@ server.listen(port, function () {
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function (socket) {
+  // should create new bubble
 
-  // when the client emits 'new message', this listens and executes
   socket.on('v', function (data) {
     socket.broadcast.emit('newv', {
       vx: data[0], 
