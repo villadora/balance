@@ -1,0 +1,36 @@
+.demo-container {
+  height:400px;
+  overflow:hidden;
+  display:block;
+  position:relative;
+  /* CSS3 Gradient */
+  background: rgb(0, 0,124);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(3,30,125,0.7)), color-stop(100%,rgba(14,14,43,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(3,32,140,0.8) 0%,rgba(14,14,84,1) 100%);
+
+}
+
+.bubble {
+  position:absolute;
+  display:block;
+  /* CSS3 Box Shadow */
+  box-shadow:0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  -webkit-box-shadow:0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  -moz-box-shadow:0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  /* CSS3 Border Radius */
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  /* CSS3 Transition */
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bubble {
+  width:100px;
+  height:100px;
+  bottom:100px;
+  left:500px;
+} 
