@@ -26,12 +26,12 @@ var ts = Date.now();
 
 if (window.DeviceMotionEvent != undefined) {
   window.ondevicemotion = function(e) {
-    ax = event.accelerationIncludingGravity.x;
-    ay = event.accelerationIncludingGravity.y;
+    ax = Math.round(event.accelerationIncludingGravity.x);
+    ay = Math.round(event.accelerationIncludingGravity.y);
 
-    labels[0].innerText = e.accelerationIncludingGravity.x;
-    labels[1].innerText = e.accelerationIncludingGravity.y;
-    labels[2].innerText = e.accelerationIncludingGravity.z;
+    labels[0].innerText = Math.round(e.accelerationIncludingGravity.x);
+    labels[1].innerText = Math.round(e.accelerationIncludingGravity.y);
+    labels[2].innerText = Math.round(e.accelerationIncludingGravity.z);
 
     // console.log("accelerationY", e.accelerationIncludingGravity.y);
     // console.log("accelerationZ", e.accelerationIncludingGravity.z);
